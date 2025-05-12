@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>Университет Синергия</title>
+<!-- Подключение шрифтов через Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    /* Создаем размытый фон с логотипом */
+    position: relative;
+    font-family: 'Montserrat', sans-serif; /* основной шрифт для заголовка */
+  }
+
+  /* Псевдоэлемент для размытого фона с локальным изображением */
+  body::after {
+    content: "";
+    position: fixed;
+    top:0; left:0; right:0; bottom:0;
+    background-image: url('123.png'); /* путь к локальному файлу логотипа */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1; /* чтобы не мешать содержимому */
+  }
+
+  /* Основной контейнер для контента */
+  .container {
+    position: relative;
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  }
+
+  h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* основной шрифт заголовка */
+    font-size: 2em;
+    margin-bottom: 30px;
+    color:#2c3e50;
+  }
+
+  /* Стиль для блока информации */
+  .info {
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+  }
+
+  /* Варианты шрифтов для разных параграфов */
+  .font1 { font-family:'Roboto', sans-serif; }
+  .font2 { font-family:'Open Sans', sans-serif; }
+  .font3 { font-family:'Lato', sans-serif; }
+  .font4 { font-family:'Montserrat', sans-serif; }
+  .font5 { font-family:'PT Serif', serif; }
+
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Университет Синергия</h1>
+<div class="info">
+<p class="font1"><strong>Название организации:</strong> Университет Синергия</p>
+<p class="font2"><strong>Адрес:</strong> г. Москва, ул. Науки, д. 10</p>
+<p class="font3"><strong>Контактный телефон:</strong> +7 (495) 987-65-43</p>
+<p class="font4"><strong>Электронная почта:</strong> info@synergy.ru</p>
+<p class="font5"><strong>Описание:</strong> Университет Синергия — ведущий образовательный центр, предлагающий программы в области бизнеса, технологий и гуманитарных наук.</p>
+</div>
+</div>
+</body>
+</html>
